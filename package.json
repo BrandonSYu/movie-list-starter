@@ -1,35 +1,37 @@
 {
   "name": "movie-list-starter",
   "version": "1.0.0",
-  "description": "A starter repo for Hack Reactor's Movie List prompt with webpack setup.",
+  "description": "This repo will provide a starting point for building Movie List, an educational prompt to practice building full-stack React Applications. The starter repo comes with full webpack setup, with the exception of a single transpilation error, embedded to allow students to practice.",
   "main": "index.js",
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "react-dev": "webpack -d --watch",
+    "server-dev": "nodemon server/index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/RamKhalsa/movie-list-starter.git"
+    "url": "git+https://github.com/BrandonSYu/movie-list-starter.git"
   },
-  "author": "Ram Khalsa",
+  "author": "Brandon Yu",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/RamKhalsa/movie-list-starter/issues"
+    "url": "https://github.com/BrandonSYu/movie-list-starter/issues"
   },
-  "homepage": "https://github.com/RamKhalsa/movie-list-starter#readme",
-  "dependencies": {
-  },
+  "homepage": "https://github.com/BrandonSYu/movie-list-starter#readme",
   "devDependencies": {
-    "@babel/core": "^7.3.4",
-    "@babel/preset-env": "^7.3.4",
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
     "@babel/preset-react": "^7.0.0",
-    "babel": "^6.23.0",
-    "babel-loader": "^8.0.5",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1",
-    "css-loader": "^2.1.1",
-    "eslint": "^5.15.1",
-    "node": "^11.11.0",
-    "style-loader": "^0.23.1",
-    "underscore": "^1.9.1",
-    "webpack": "^4.29.6"
+    "babel-loader": "^8.0.6",
+    "webpack": "^4.35.0",
+    "webpack-cli": "^3.3.5"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "jquery": "^3.4.1",
+    "mongoose": "^5.6.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
   }
 }
